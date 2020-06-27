@@ -1,0 +1,1 @@
+# mpob-ereg-assets
