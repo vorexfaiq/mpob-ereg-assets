@@ -13,7 +13,7 @@
 }
 
 .login-wrapper {
-	background: url('/assets/img/bg-sawit.min.webp');
+	background: url('https://cdn.jsdelivr.net/gh/vorexfaiq/mpob-ereg-assets/img/bg-sawit.min.webp');
 	background-size: cover;
 	padding-top: 50px;
 	height: auto;
@@ -133,7 +133,7 @@ thead label:not(.error) {
 
 .green-section {
 	background-color: #07a18e;
-	background-image: url('/assets/img/bg-login.min.webp');
+	background-image: url('https://cdn.jsdelivr.net/gh/vorexfaiq/mpob-ereg-assets/img/bg-login.min.webp');
 	background-size: cover;
 }
 
