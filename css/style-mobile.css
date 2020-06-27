@@ -1,0 +1,151 @@
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 992px) {
+  .layout-header-content {
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-cons {
+    min-width: 100px;
+  }
+
+  .form-control {
+    font-size: 11px;
+  }
+
+  body, p {
+    font-size: 11px;
+  }
+
+  /*
+  form .row [class*='col-']:first-child {
+    padding-left: 7px;
+  }
+  */
+
+  .show-mobile {
+    display: block;
+  }
+
+  .show-mobile .fa {
+    display: none;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+
+  .filter .btn-bar .btn {
+    padding: 2px 5px;
+  }
+
+  .layout-action {
+    display: block;
+    position: absolute;
+    top:50px;
+  }
+
+  .header {
+    padding: 0;
+  }
+
+  .header .header-main {
+    text-align: center;
+    width: auto;
+    margin: 0px auto;
+  }
+
+  .header .header-main .title {
+    display:none;
+  }
+
+  .header .user-info {
+    display:none;
+  }
+
+  .header .logout-icon, .header .menu-icon {
+    padding: 9px 13px;
+    width: 50px;
+    height: 50px;
+    display: block;
+  }
+}
+
+@media (max-width: 736px) {
+  .ellipsize-left {
+    width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-group label:not(.error), thead label:not(.error) {
+    font-size: 11px;
+  }
+
+  .btn {
+    font-size: 12px;
+  }
+
+  .btn-cons {
+    min-width: 70px;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+
+  table.dataTable {
+    margin-bottom: 155px !important;
+  }
+
+  .header-main, .user-info {
+    font-size: 11px;
+  }
+
+  .form-control {
+    font-size: 11px;
+  }
+
+  body, p {
+    font-size: 11px;
+  }
+
+  form .row [class*='col-']:first-child {
+    padding-left: 15px;
+  }
+
+  .form .btn.btn-cons {
+    font-size: 11px;
+    padding: 5px 10px;
+    margin-top: 10px;
+  }
+
+  .dropdown-menu.show {
+    left: -29% !important;
+  }
+
+  .header .header-main {
+    width: 60% !important;
+  }
+
+  .btn-bar .btn-group .btn {
+    font-size: 10px;
+  }
+
+  .notfound .notfound-404{
+      position:relative;
+      height:168px
+  }
+  .notfound .notfound-404 h1{
+      font-size:142px
+  }
+  .notfound h2{
+      font-size:22px
+  }
+}
