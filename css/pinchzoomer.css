@@ -5,7 +5,7 @@
 
 .fullscreenToggle, .zoomIn, .zoomOut
 {
-	background: url(../assets/pz_sheet.png) no-repeat;
+	background: url(../pz_sheet.png) no-repeat;
 	width: 30px;
 	height: 30px;
 	overflow: hidden;
