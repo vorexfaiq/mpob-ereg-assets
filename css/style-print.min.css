@@ -1,0 +1,365 @@
+@page {
+  header: page-header;
+  footer: page-footer;
+}
+
+tr    { page-break-inside:avoid; page-break-after:auto }
+td    { page-break-inside:avoid; page-break-after:auto }
+thead { display:table-header-group }
+tfoot { display:table-footer-group }
+
+.print-header, .print-footer {
+  display: table-row;
+}
+
+.print-header th {
+  border-top-style: hidden !important;
+  border-right-style: hidden !important;
+  border-left-style: hidden !important;
+}
+
+.print-footer td {
+  border-right-style: hidden !important;
+  border-bottom-style: hidden !important;
+  border-left-style: hidden !important;
+}
+
+.print-content {
+  z-index: 90;
+}
+
+.print-full-width {
+  width: 100% !important;
+  max-width: unset !important;
+  flex: unset !important;
+}
+
+.no-print {
+  display: none !important;
+}
+
+.print-only {
+	display: block !important;
+}
+
+.content-block, p {
+  page-break-inside: avoid;
+}
+
+html, body {
+  width: 263mm; /* A4 width 297mm minus margin 17mm*2 */
+  height: 184mm;
+  font-family: 'Roboto', sans-serif;
+}
+
+.table-bordered, .table-bordered td, .table-bordered th {
+  border: 1px solid #dee2e6;
+  border-collapse:collapse;
+}
+
+div.layout-header,
+div.filter {
+  display:none;
+}
+
+table.table-report {
+  width: 100%;
+  font-size: 12px !important;
+}
+
+.table thead tr th, .table tbody tr td {
+  font-size: 12px !important;
+  padding: 2px 5px;
+  border: 1px solid #6d6d6d !important;
+  text-transform: uppercase;
+  vertical-align: top;
+}
+
+.table.no-border thead tr th, .table.no-border tbody tr td {
+  border: none !important;
+}
+
+.pace,
+.checkbox input[type="radio"]+label {
+  display: none;
+}
+
+.btn-group:not(label) input[type="checkbox"]:checked+label,
+.btn-group:not(label) input[type="radio"]:checked+label,
+.checkbox input[type="radio"]:checked+label,
+textarea[name=remark] {
+  font-family: 'Roboto', sans-serif;
+  background-color: unset;
+  color: #000;
+  border: none;
+  display: block;
+  padding: 0;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.btn-group:not(label) input[type="checkbox"]:checked+label,
+.btn-group:not(label) input[type="radio"]+label {
+  display: none;
+}
+
+.checkbox input[type="radio"]:checked+label::before {
+  font-family: 'Roboto', sans-serif;
+  content: "(";
+  border: none;
+  position: relative;
+  top: 0;
+  width: auto;
+  height: auto;
+  margin: 0;
+  color: #000;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.checkbox input[type="radio"]:checked+label::after {
+  font-family: 'Roboto', sans-serif;
+  content: ")";
+  border: none;
+  position: relative;
+  top: 0;
+  width: auto;
+  height: auto;
+  margin: 0;
+  color: #000;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.checkbox label {
+  float: right;
+}
+
+.row > div {
+  display: inline-block;
+  float: left;
+}
+
+.row > div.col-md-3 {
+  max-width: 25%;
+}
+
+.row > div.col-md-6 {
+  max-width: 50%;
+}
+
+input {
+  border: none !important;
+  padding: 0 !important;
+  background: unset !important;
+}
+
+label {
+  margin-bottom: 0;
+}
+
+h5 {
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+}
+
+.select2-container {
+  width: auto !important;
+  display: block;
+  float: none;
+  clear: both;
+}
+
+.select2-container .select2-selection {
+  border: none !important;
+  padding: 0;
+}
+
+.select2-container .select2-selection span {
+  margin-right: 3px;
+  font-size: 10px;
+  line-height: 14px !important;
+  padding-left: 0 !important;
+  padding-top: 0 !important;
+}
+
+.select2-container .select2-selection__arrow {
+  display: none;
+}
+
+div.bordered>div {
+  border: none;
+  padding-top: 0 !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  padding-bottom: 0 !important;
+}
+
+.remark > div {
+  width: 100% !important;
+  clear: both;
+  flex: unset;
+  max-width: unset;
+}
+
+table.table-report tr td.border-bold-t,
+table.table-report tr th.border-bold-t {
+    border-top: 2px solid #000 !important;
+}
+
+table.table-report tr td.border-bold-b,
+table.table-report tr th.border-bold-b {
+    border-bottom: 2px solid #000 !important;
+}
+
+table.table-report tr td.border-bold-r,
+table.table-report tr th.border-bold-r {
+    border-right: 2px solid #000 !important;
+}
+
+table.table-report tr td.border-bold-l,
+table.table-report tr th.border-bold-l {
+    border-left: 2px solid #000 !important;
+}
+
+.table-clone-wrapper {
+	position: relative;
+	overflow: hidden;
+	page-break-before: always;
+ 	display: block !important;
+}
+
+.panel-heading > table.table-report[data-print-split=true],
+.alert , .hide-column{
+  display: none;
+}
+.hide-checkbox-print thead tr th.small-cell,
+.hide-checkbox-print tbody tr td.small-cell,
+.hide-checkbox-print thead tr th + th + th + th + th + th + th + th + th,
+.hide-checkbox-print tbody tr td + td + td + td + td + td + td + td + td,
+.hide-pdf-print thead tr th:last-child,
+.hide-pdf-print tbody tr td:last-child {
+	display: none;
+}
+div.filter .filter-form{display: none;}
+div.filter, div.filter .show-print-filter, .show-title{
+	display: block !important;
+  position: inherit !important;
+  padding: 0px 10px !important;
+  width: 100%;
+  margin: 0 !important;
+  margin-left: -15px !important;
+}
+div.filter .show-print-filter .row{
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+div.filter .show-print-filter .row .form-group{
+    flex: 1;
+}
+.page-print {
+    margin: 0;
+    border: initial;
+    border-radius: initial;
+    width: initial;
+    min-height: initial;
+    box-shadow: initial;
+    background: initial;
+}
+
+.show-title{
+    padding-left: 25px !important;
+    font-weight: 700;
+    border-bottom: 1px solid #dedede;
+}
+.btn-bar{display: none;}
+.col-lg-2{width: 100%}
+
+.show-print-filter .btn-group:not(label) input[type="checkbox"]:checked+label.btn-outline-success, .btn-group:not(label) input[type="radio"]:checked+label.btn-outline-success, .show-print-filter .btn-group:not(label) input[type="checkbox"]:checked+label.btn-outline-info, .show-print-filter .btn-group:not(label) input[type="radio"]:checked+label.btn-outline-info {
+    color: black;
+    background-color: white;
+    border-color: white;
+    text-align: left;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 16px;
+}
+.show-print-filter .btn-group:not(label) input[type="checkbox"]:checked+label.btn-outline-complete, .show-print-filter .btn-group:not(label) input[type="radio"]:checked+label.btn-outline-complete {
+    color: black;
+    background-color: white;
+    border-color: white;
+    text-align: left;
+    font-weight: normal;
+    font-size: 10px;
+}
+.show-print-filter .select2-container--default .select2-selection--single .select2-selection__placeholder {
+    color: black;
+    font-size: 10px;
+}
+.show-print-filter select.form-control:not([size]):not([multiple]), .show-print-filter .input-group-text.slim, input.slim, button.slim, .show-print-filter  a[type=button].slim {
+    color: black;
+    font-size: 10px;
+}
+.show-print-filter .filter-form .form-group>label {
+    font-size: 10px;
+}
+.table.dataTable.no-footer {
+    width: 100% !important;
+}
+.dataTables_wrapper .bottom{
+	 display: none;
+}
+.label-success {
+    background-color: #fff;
+    color: #000;
+}
+.show-print-filter .table thead tr th{vertical-align: top;}
+.show-print-filter .form-control{font-size: 10px;border: 0px solid #b5b5b5;padding: 0;}
+
+.show-print-filter .form-group label:not(.error), .show-print-filter thead label:not(.error) {
+    font-size: 9px;
+    letter-spacing: 0;
+}
+.show-print-filter .select2-container .select2-selection span {
+  line-height: 12px !important;
+}
+.show-print-filter .form-control{
+	min-height: 15px;
+	height: 15px;
+}
+.show-print-filter .btn-more {
+    font-size: 10px;
+    letter-spacing: 0em;
+    padding: 0;
+    border: 0px;
+    margin: -6px 0 0 0;
+}
+.table tbody tr td>select.form-control {
+    border: 0;
+}
+.table thead tr th:first-child {
+    padding-left: 5px !important;
+}
+.label-warning {
+    background-color: #fff;
+    color: #000;
+    padding: 0;
+}
+.label-important, .label-danger {
+    background-color: #fff;
+    color: #000;
+}
+.filter-width-200-print{
+  width: 200px;
+}
+.filter-width-100-print{
+  width: 100px;
+}
+.show-print-filter select.form-control:not([size]):not([multiple]), .show-print-filter .input-group-text.slim, input.slim, button.slim, .show-print-filter a[type=button].slim {
+    height: 14px;
+}
+.label-inverse {
+    background-color: #fff;
+    color: #000;
+    padding: 0;
+}
