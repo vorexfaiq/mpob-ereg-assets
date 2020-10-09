@@ -360,4 +360,10 @@ ul {
   #form-login .form-control {
     font-size: 1.5em;
   }
+
+  .login-wrapper {
+    padding-top: 0px;
+    background: #e8a643;
+    background-image: none;
+  }
 }
