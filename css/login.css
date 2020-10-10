@@ -2,8 +2,7 @@
   animation: blinker 2s linear infinite;
 }
 
-#g-recaptcha {
-  position: relative;
+.grecaptcha-badge {
   z-index: 1000;
 }
 
